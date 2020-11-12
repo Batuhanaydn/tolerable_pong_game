@@ -1,4 +1,4 @@
-# tolerable_pong_game\
+# tolerable_pong_game/
 
 # if you are using mac or linux:
 # import os
