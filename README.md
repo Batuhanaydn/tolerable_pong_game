@@ -1,4 +1,5 @@
-# tolerable_pong_game
+# tolerable_pong_game \n
+
 # if you are using mac or linux:
 # import os
 # os.system("bounce.wav&")
