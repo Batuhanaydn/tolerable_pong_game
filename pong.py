@@ -1,12 +1,10 @@
 # Simple Pong Games
 
+
 import turtle
-import os
-from pygame import mixer, mixer_music
-import pygame
+import winsound
 
 
-pygame.init()
 
 win = turtle.Screen()
 win.title("Pong Game @beyaydinn")
@@ -111,15 +109,14 @@ while True:
     if ball.ycor() > 290:
         ball.sety(290)
         ball.dy *= -1
-        pygame.mixer.music.load("bounce.wav")
-        pygame.mixer.music.play()
+        winsound.PlaySound("bounce.wav", winsound.SND_ASYNC)
 
 
     if ball.ycor() < -290:
         ball.sety(-290)
         ball.dy *= -1
-        pygame.mixer.music.load("bounce.wav")
-        pygame.mixer.music.play()
+        winsound.PlaySound("bounce.wav", winsound.SND_ASYNC)
+
 
     if ball.xcor() > 390:
         ball.goto(180,0)
@@ -139,14 +136,11 @@ while True:
     if ball.xcor() > 340 and ball.xcor() < 350 and (ball.ycor() < paddle_b.ycor() + 40 and ball.ycor() > paddle_b.ycor() - 40 ):
         ball.setx(340)
         ball.dx *= -1      
-        pygame.mixer.music.load("bounce.wav")
-        pygame.mixer.music.play()
+        winsound.PlaySound("bounce.wav", winsound.SND_ASYNC)
 
 
 
     if ball.xcor() < -340 and ball.xcor() > -350 and (ball.ycor() < paddle_a.ycor() + 40 and ball.ycor() > paddle_b.ycor() - 40 ):
         ball.setx(-340)
         ball.dx *= -1      
-        pygame.mixer.music.load("bounce.wav")
-        pygame.mixer.music.play()
-
+        winsound.PlaySound("bounce.wav", winsound.SND_ASYNC)
