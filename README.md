@@ -1,3 +1,11 @@
 # tolerable_pong_game
-pip3 install turtle
-pip3 install pygame
+# if you are using mac or linux:
+# import os
+# os.system("bounce.wav&")
+
+
+
+# For Windows
+# The code was written in the windows operating system
+
+# Have Fun!!!
